@@ -68,7 +68,7 @@ nav a {
 
 .focusSmartphone {
     height: 600px;
-    background: url(static/images/xiaomi-12-lite-banner.png);
+    background: url(/static/images/xiaomi-12-lite-banner.png);
     background-size: cover;
     background-position: center;
     display: flex;
