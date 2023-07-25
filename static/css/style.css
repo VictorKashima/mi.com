@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    transition: .5s;
+    box-sizing: border-box;
 }
 
 :root {
@@ -29,6 +29,8 @@
     --p3-line-height: 20px;
 
     --grid-gap: 16px;
+
+    --site-util-width: min(100vw - 100px, 1400px);
 }
 
 html {
@@ -40,4 +42,9 @@ html {
 a {
     text-decoration: none;
     color: var(--text-base);
+}
+
+.wrapper {
+    width: var(--site-util-width);
+    margin-inline: auto;
 }
