@@ -1,5 +1,7 @@
 header {
     position: sticky;
+    top: 0;
+    z-index: 10;
     box-shadow: 0 6px 16px 0 #1919190f;
     background: var(--headerBackground);
     font-size: var(--p3-font-size);
@@ -46,10 +48,32 @@ nav a {
 
 .bottom-bar {
     display: flex;
-    gap: 3rem;
-    padding: 3rem 0;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    gap: 5rem;
+    padding: 4rem 0;
     justify-content: center;
     background: #f7f7f7;
+    transition: all .2s ease-in-out;
+}
+
+.show {
+    visibility: visible;
+    z-index: 11;
+    opacity: 1;
+}
+
+.half-opacity::after {
+    transition: all .2s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    content: '';
+    height: 100vh;
+    background: #0004;
 }
 
 .bottom-bar svg {
