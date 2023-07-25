@@ -12,23 +12,6 @@
     --headerBackground: #FFF;
     --background: #FFF;
     --brand-color: #ff6900;
-    
-    --h1-font-size: 48px;
-    --h1-line-height: 58px;
-    --h2-font-size: 36px;
-    --h2-line-height: 40px;
-    --h3-font-size: 32px;
-    --h3-line-height: 36px;
-    --h4-font-size: 28px;
-    --h4-line-height: 34px;
-    --p1-font-size: 24px;
-    --p1-line-height: 28px;
-    --p2-font-size: 20px;
-    --p2-line-height: 26px;
-    --p3-font-size: 16px;
-    --p3-line-height: 20px;
-
-    --grid-gap: 16px;
 
     --site-util-width: min(100vw - 100px, 1400px);
 }
@@ -47,4 +30,32 @@ a {
 .wrapper {
     width: var(--site-util-width);
     margin-inline: auto;
+}
+
+@media screen and (max-width:1024px) {
+
+    html {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    :root {
+        --site-util-width: min(100vw - 30px, 1300px);
+    }
+
+    html {
+        font-size: 10px;
+    }
+
 }
