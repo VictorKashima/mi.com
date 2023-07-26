@@ -27,6 +27,10 @@ a {
     color: var(--text-base);
 }
 
+ul {
+    list-style: none;
+}
+
 .wrapper {
     width: var(--site-util-width);
     margin-inline: auto;

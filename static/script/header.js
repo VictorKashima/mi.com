@@ -24,5 +24,9 @@ $(document).ready(function() {
     }
   );
 
+  document.querySelector(".hamburger").addEventListener("click", () =>
+    document.querySelector(".nav-main").classList.toggle("show-menu")
+  );
+
 
 });

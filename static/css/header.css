@@ -34,6 +34,7 @@ nav a {
 
 .icon {
     height: 2rem;
+    margin-right: 3rem;
 }
 
 .category {
@@ -83,4 +84,90 @@ nav a {
 
 .bottom-bar svg:hover {
     fill: var(--brand-color);
+}
+
+.hamburger {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu .hamburger {
+    right: 85%;
+    position: absolute;
+}
+
+.line {
+    width: 100%;
+    height: .1rem;
+    padding: 1px;
+    border-radius: 10px;
+    background: #191919;
+    box-shadow: 0.1rem 0.1rem 5px #191919;
+    transition: transform .5s;
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.45rem, .6rem);
+    background: #F00;
+    box-shadow: none;
+    z-index: 5;
+}
+
+.show-menu #line2 {
+    display: none;
+}
+
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(.45rem, -.6rem);
+    background: #F00;
+}
+
+.sidebar {
+    z-index: 4;
+    height: 100vh;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 10px 5px 15px 10px #FFF;
+    position: fixed; 
+    top: 0;
+    right: -110%;
+    transition: all .8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.show-menu .sidebar {
+    right: 0;
+}
+
+@media screen and (max-width:768px) {
+
+    .left-bar,
+    .right-bar,
+    .bottom-bar {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-main {
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+    
 }
