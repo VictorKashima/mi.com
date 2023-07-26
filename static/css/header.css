@@ -4,8 +4,8 @@ header {
     z-index: 10;
     box-shadow: 0 6px 16px 0 #1919190f;
     background: var(--headerBackground);
-    font-size: var(--p3-font-size);
-    line-height: var(--p3-line-height);
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 .nav-main {
