@@ -107,14 +107,12 @@ nav a {
     padding: 1px;
     border-radius: 10px;
     background: #191919;
-    box-shadow: 0.1rem 0.1rem 5px #191919;
     transition: transform .5s;
 }
 
 .show-menu #line1 {
-    transform: rotate(45deg) translate(.45rem, .6rem);
+    transform: rotate(45deg) translate(.45rem, .5rem);
     background: #F00;
-    box-shadow: none;
     z-index: 5;
 }
 
@@ -123,7 +121,7 @@ nav a {
 }
 
 .show-menu #line3 {
-    transform: rotate(-45deg) translate(.45rem, -.6rem);
+    transform: rotate(-45deg) translate(.45rem, -.5rem);
     background: #F00;
 }
 
