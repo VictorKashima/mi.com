@@ -12,6 +12,7 @@
     --headerBackground: #FFF;
     --background: #FFF;
     --brand-color: #ff6900;
+    --grid-gap: 1rem;
 
     --site-util-width: min(100vw - 100px, 1400px);
 }
