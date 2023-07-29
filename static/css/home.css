@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.6rem;
+    font-size: 2.3vw;
     line-height: 2.5rem;
     font-family: 'MiSans';
     font-weight: 600;
@@ -80,25 +80,25 @@ h4 {
 }
 
 .product-info {
-    margin-top: 2vw;
+    top: 2vw;
     position: absolute;
     color: var(--text-base);
     text-align: center;
 }
 
 .product-info h2 {
-    font-size: max(2.5vw, 12px);
     line-height: 1.2em;
+    margin-bottom: .5rem;
 }
 
 .product-info h4 {
     font-size: max(1.25vw, 10px);
-    margin-top: .3rem;
+    margin-bottom: .5rem;
 }
 
 .product-info > a {
     font-size: max(1.25vw, 10px);
-    margin-top: .3rem;
+    margin-bottom: .5rem;
 }
 
 .product-info > a:nth-child(3) {
@@ -127,15 +127,16 @@ h4 {
     bottom: 0;
 }
 
-.videos-carousel {
-    margin: 64px;
-    padding: .8vw;
-    background: #FFF;
+.carousel {
     display: flex;
+    gap: 1rem;
+    margin: 4rem;
+    padding: 1rem;
+    background: #FFF;
 }
 
-.video {
-    width: calc(50% - (var(--grid-gap)/2));
+.carousel > div {
+    width: 50%;
 }
 
 .video img {
@@ -144,37 +145,50 @@ h4 {
 
 .text {
     display: flex;
-    width: calc(50% - (var(--grid-gap)/2));
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 3vw;
     text-align: center;
-    padding: 3.5vw;
 }
 
-.text h2 {
-    font-size: max(2.5vw, 12px);
-    margin-bottom: 2.5vw;
-    line-height: 1.2em;
+.swiper-text {
+    display: flex;
+    align-items: center;
 }
 
-.text p,
-.text a {
-    font-weight: 400;
-    font-size: max(1.25vw, 10px);
-    margin-bottom: 1.25vw;
+.content-text h2 {
+    line-height: inherit;
+    margin-bottom: 2rem;
 }
 
-.text a:hover {
+.content-text p,
+.content-text a {
+    font-size: max(1.3vw, 10px);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.content-text a:hover {
     text-decoration: underline;
 }
 
-.text i {
+.slide-control {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.slide-control i {
     color: #FFF;
-    font-size: max(1vw, 10px);
-    padding: .3em 1em;
     background: #000;
-    border-radius: 14px;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.slide-control i:hover {
+    opacity: .8;
 }
 
 @media screen and (max-width:480px) {
@@ -186,6 +200,10 @@ h4 {
     .banner-info {
         align-items: center;
         margin-top: 13%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
     }
 
     .itens-01 {

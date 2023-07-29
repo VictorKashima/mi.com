@@ -32,6 +32,11 @@ ul {
     list-style: none;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 .wrapper {
     width: var(--site-util-width);
     margin-inline: auto;

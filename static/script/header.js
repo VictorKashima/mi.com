@@ -28,5 +28,4 @@ $(document).ready(function() {
     document.querySelector(".nav-main").classList.toggle("show-menu")
   );
 
-
 });

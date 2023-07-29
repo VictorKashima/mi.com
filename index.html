@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/header.css">
     <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <title>Xiaomi Brasil</title>
 </head>
@@ -119,28 +120,67 @@
     </div>
 </section>
 
-<section class="videos-carousel">
-    <div class="video">
-        <img src="static/images/video-01.png" alt="" srcset="">
+<section class="carousel">
+    <div class="swiper-video video">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="static/images/victor-kashima-carousel-01.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/victor-kashima-carousel-02.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/victor-kashima-carousel-03.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/victor-kashima-carousel-04.png" alt="" srcset="">
+            </div>
+        </div>
     </div>
 
     <div class="text">
-        <div class="slide-01">
-            <h2>Xiaomi Imagery Awards 2022 Recap</h2>
-            <p>Review the beautifaul works of our winners! Follow Xioami to cature unforgettable moments in life. Even tiny details can tell a big stoty.</p>
-            <a href="#">Saiba mais ></a>
+        <div class="swiper-text">
+            <div class="swiper-wrapper">
+                <div class="content-text swiper-slide">
+                    <h2>Xiaomi Imagery Awards 2022 Recap</h2>
+                    <p>Review the beautiful works of our winners! Follow Xiaomi to capture unforgettable moments in life. Even tiny details can tell a big story.</p>
+                    <a href="#">Saiba mais ></a>
+                </div>
+                <div class="content-text swiper-slide">
+                    <h2>Xiaomi Imagery Awards 2022 Recap</h2>
+                    <p>Review the beautifaul works of our winners! Follow Xioami to cature unforgettable moments in life. Even tiny details can tell a big stoty.</p>
+                    <a href="#">Saiba mais ></a>
+                </div>
+                <div class="content-text swiper-slide">
+                    <h2>Xiaomi Imagery Awards 2022 Recap</h2>
+                    <p>Review the beautifaul works of our winners! Follow Xioami to cature unforgettable moments in life. Even tiny details can tell a big stoty.</p>
+                    <a href="#">Saiba mais ></a>
+                </div>
+                <div class="content-text swiper-slide">
+                    <h2>Xiaomi Imagery Awards 2022 Recap</h2>
+                    <p>Review the beautifaul works of our winners! Follow Xioami to cature unforgettable moments in life. Even tiny details can tell a big stoty.</p>
+                    <a href="#">Saiba mais ></a>
+                </div>
+            </div>
         </div>
-
-        <div class="button-slider">
-            <i class="fa-solid fa-angle-left"></i>
-            <i class="fa-solid fa-angle-right"></i>
+        
+        <div class="slide-control">
+            <button onclick="previousSlide()">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button onclick="nextSlide()">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
     </div>
+
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/a350e5ffff.js" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="static/script/swiper.js"></script>
 <script src="static/script/header.js"></script>
 </body>
 </html>
