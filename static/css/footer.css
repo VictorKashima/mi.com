@@ -1,0 +1,45 @@
+footer {
+    background: #191919;
+    padding: 3rem 0 2rem;
+    color: #FFF;
+}
+
+footer a {
+    color: #898989;
+}
+
+.footer-link,
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.footer-info a {
+    color: #FFF;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-info > div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-title {
+    font-weight: 700;
+}
+
+footer ul li {
+    margin: 1rem 0;
+}
+
+footer hr {
+    margin: 3rem 0 1.5rem;
+}
