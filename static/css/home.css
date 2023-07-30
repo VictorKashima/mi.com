@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 @import url(../font/MiSans/font.css);
 
-.focusSmartphone {
+.main-banner {
     height: 600px;
     background: url('../images/victor-kashima-xiaomi-13-lite.jpg');
     background-size: cover;
@@ -20,7 +20,7 @@
     margin-top: -1rem;
 }
 
-.buyNow {
+.button-read-more {
     width: max-content;
     background: #000;
     color: #FFF;
@@ -206,7 +206,7 @@ h4 {
 
 @media screen and (max-width:480px) {
 
-    .focusSmartphone {
+    .main-banner {
         align-items: start;
     }
 
