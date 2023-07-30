@@ -37,10 +37,35 @@ footer a {
     font-weight: 700;
 }
 
-footer ul li {
+footer ul {
+    flex-grow: 1;
+}
+
+footer ul li,
+footer input {
     margin: 1rem 0;
 }
 
 footer hr {
     margin: 3rem 0 1.5rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+footer input {
+    background: none;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #FFF;
+    width: 100%;
+}
+
+.follow-me {
+    flex-grow: 2;
 }
