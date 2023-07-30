@@ -1,7 +1,7 @@
 const swiperOne = new Swiper('.swiper-video', {
 
     loop: true,
-    speed: 500,
+    speed: 1000,
 
     allowTouchMove: false,
 
@@ -14,7 +14,7 @@ const swiperOne = new Swiper('.swiper-video', {
 const swiperTwo = new Swiper('.swiper-text', {
 
   loop: true,
-  speed: 500,
+  speed: 1000,
 
   allowTouchMove: false,
   
